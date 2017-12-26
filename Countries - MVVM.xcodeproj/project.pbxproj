@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59DFA6901FF0F0D500418A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA68F1FF0F0D500418A3A /* AppDelegate.swift */; };
+		59DFA6971FF0F0D500418A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DFA6961FF0F0D500418A3A /* Assets.xcassets */; };
+		59DFA69A1FF0F0D500418A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DFA6981FF0F0D500418A3A /* LaunchScreen.storyboard */; };
+		59DFA6A51FF0F0D600418A3A /* Countries___MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6A41FF0F0D600418A3A /* Countries___MVVMTests.swift */; };
+		59DFA6B01FF0F0D600418A3A /* Countries___MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6AF1FF0F0D600418A3A /* Countries___MVVMUITests.swift */; };
+		59DFA6BF1FF0F27600418A3A /* FSWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6BE1FF0F27600418A3A /* FSWebService.swift */; };
+		59DFA6C11FF0F2DA00418A3A /* FSWebSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6C01FF0F2DA00418A3A /* FSWebSource.swift */; };
+		59DFA6C51FF0F56500418A3A /* FSCountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6C31FF0F56500418A3A /* FSCountriesTableViewController.swift */; };
+		59DFA6C61FF0F56500418A3A /* FSCountriesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DFA6C41FF0F56500418A3A /* FSCountriesTableViewController.xib */; };
+		59DFA6C91FF0F7BE00418A3A /* FSCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6C81FF0F7BE00418A3A /* FSCountry.swift */; };
+		59DFA6CC1FF0FC2A00418A3A /* FSTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6CB1FF0FC2A00418A3A /* FSTableViewDataSource.swift */; };
+		59DFA6CF1FF0FF0800418A3A /* FSCountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6CE1FF0FF0800418A3A /* FSCountriesListViewModel.swift */; };
+		59DFA6D31FF11EBF00418A3A /* FScountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6D11FF11EBF00418A3A /* FScountryTableViewCell.swift */; };
+		59DFA6D41FF11EBF00418A3A /* FScountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DFA6D21FF11EBF00418A3A /* FScountryTableViewCell.xib */; };
+		59DFA6D61FF1209F00418A3A /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DFA6D51FF1209F00418A3A /* FSConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59DFA6A11FF0F0D500418A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59DFA6841FF0F0D500418A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59DFA68B1FF0F0D500418A3A;
+			remoteInfo = "Countries - MVVM";
+		};
+		59DFA6AC1FF0F0D600418A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59DFA6841FF0F0D500418A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59DFA68B1FF0F0D500418A3A;
+			remoteInfo = "Countries - MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59DFA68C1FF0F0D500418A3A /* Countries - MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countries - MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DFA68F1FF0F0D500418A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59DFA6961FF0F0D500418A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59DFA6991FF0F0D500418A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59DFA69B1FF0F0D500418A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59DFA6A01FF0F0D500418A3A /* Countries - MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Countries - MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DFA6A41FF0F0D600418A3A /* Countries___MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries___MVVMTests.swift"; sourceTree = "<group>"; };
+		59DFA6A61FF0F0D600418A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59DFA6AB1FF0F0D600418A3A /* Countries - MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Countries - MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DFA6AF1FF0F0D600418A3A /* Countries___MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries___MVVMUITests.swift"; sourceTree = "<group>"; };
+		59DFA6B11FF0F0D600418A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59DFA6BE1FF0F27600418A3A /* FSWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWebService.swift; sourceTree = "<group>"; };
+		59DFA6C01FF0F2DA00418A3A /* FSWebSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWebSource.swift; sourceTree = "<group>"; };
+		59DFA6C31FF0F56500418A3A /* FSCountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCountriesTableViewController.swift; sourceTree = "<group>"; };
+		59DFA6C41FF0F56500418A3A /* FSCountriesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSCountriesTableViewController.xib; sourceTree = "<group>"; };
+		59DFA6C81FF0F7BE00418A3A /* FSCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCountry.swift; sourceTree = "<group>"; };
+		59DFA6CB1FF0FC2A00418A3A /* FSTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTableViewDataSource.swift; sourceTree = "<group>"; };
+		59DFA6CE1FF0FF0800418A3A /* FSCountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCountriesListViewModel.swift; sourceTree = "<group>"; };
+		59DFA6D11FF11EBF00418A3A /* FScountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FScountryTableViewCell.swift; sourceTree = "<group>"; };
+		59DFA6D21FF11EBF00418A3A /* FScountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FScountryTableViewCell.xib; sourceTree = "<group>"; };
+		59DFA6D51FF1209F00418A3A /* FSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59DFA6891FF0F0D500418A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA69D1FF0F0D500418A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA6A81FF0F0D600418A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59DFA6831FF0F0D500418A3A = {
+			isa = PBXGroup;
+			children = (
+				59DFA68E1FF0F0D500418A3A /* Countries - MVVM */,
+				59DFA6A31FF0F0D500418A3A /* Countries - MVVMTests */,
+				59DFA6AE1FF0F0D600418A3A /* Countries - MVVMUITests */,
+				59DFA68D1FF0F0D500418A3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59DFA68D1FF0F0D500418A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA68C1FF0F0D500418A3A /* Countries - MVVM.app */,
+				59DFA6A01FF0F0D500418A3A /* Countries - MVVMTests.xctest */,
+				59DFA6AB1FF0F0D600418A3A /* Countries - MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DFA68E1FF0F0D500418A3A /* Countries - MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6D01FF11E9900418A3A /* Cells */,
+				59DFA6CD1FF0FEFC00418A3A /* View Models */,
+				59DFA6CA1FF0FC0700418A3A /* DataSources */,
+				59DFA6C71FF0F7A800418A3A /* Model */,
+				59DFA6C21FF0F4CA00418A3A /* Controllers */,
+				59DFA6BD1FF0F26600418A3A /* WebService */,
+				59DFA68F1FF0F0D500418A3A /* AppDelegate.swift */,
+				59DFA6961FF0F0D500418A3A /* Assets.xcassets */,
+				59DFA6981FF0F0D500418A3A /* LaunchScreen.storyboard */,
+				59DFA69B1FF0F0D500418A3A /* Info.plist */,
+				59DFA6D51FF1209F00418A3A /* FSConstants.swift */,
+			);
+			path = "Countries - MVVM";
+			sourceTree = "<group>";
+		};
+		59DFA6A31FF0F0D500418A3A /* Countries - MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6A41FF0F0D600418A3A /* Countries___MVVMTests.swift */,
+				59DFA6A61FF0F0D600418A3A /* Info.plist */,
+			);
+			path = "Countries - MVVMTests";
+			sourceTree = "<group>";
+		};
+		59DFA6AE1FF0F0D600418A3A /* Countries - MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6AF1FF0F0D600418A3A /* Countries___MVVMUITests.swift */,
+				59DFA6B11FF0F0D600418A3A /* Info.plist */,
+			);
+			path = "Countries - MVVMUITests";
+			sourceTree = "<group>";
+		};
+		59DFA6BD1FF0F26600418A3A /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6BE1FF0F27600418A3A /* FSWebService.swift */,
+				59DFA6C01FF0F2DA00418A3A /* FSWebSource.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		59DFA6C21FF0F4CA00418A3A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6C31FF0F56500418A3A /* FSCountriesTableViewController.swift */,
+				59DFA6C41FF0F56500418A3A /* FSCountriesTableViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		59DFA6C71FF0F7A800418A3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6C81FF0F7BE00418A3A /* FSCountry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59DFA6CA1FF0FC0700418A3A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6CB1FF0FC2A00418A3A /* FSTableViewDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		59DFA6CD1FF0FEFC00418A3A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6CE1FF0FF0800418A3A /* FSCountriesListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		59DFA6D01FF11E9900418A3A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59DFA6D11FF11EBF00418A3A /* FScountryTableViewCell.swift */,
+				59DFA6D21FF11EBF00418A3A /* FScountryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59DFA68B1FF0F0D500418A3A /* Countries - MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59DFA6B41FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVM" */;
+			buildPhases = (
+				59DFA6881FF0F0D500418A3A /* Sources */,
+				59DFA6891FF0F0D500418A3A /* Frameworks */,
+				59DFA68A1FF0F0D500418A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Countries - MVVM";
+			productName = "Countries - MVVM";
+			productReference = 59DFA68C1FF0F0D500418A3A /* Countries - MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59DFA69F1FF0F0D500418A3A /* Countries - MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59DFA6B71FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVMTests" */;
+			buildPhases = (
+				59DFA69C1FF0F0D500418A3A /* Sources */,
+				59DFA69D1FF0F0D500418A3A /* Frameworks */,
+				59DFA69E1FF0F0D500418A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59DFA6A21FF0F0D500418A3A /* PBXTargetDependency */,
+			);
+			name = "Countries - MVVMTests";
+			productName = "Countries - MVVMTests";
+			productReference = 59DFA6A01FF0F0D500418A3A /* Countries - MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59DFA6AA1FF0F0D600418A3A /* Countries - MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59DFA6BA1FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVMUITests" */;
+			buildPhases = (
+				59DFA6A71FF0F0D600418A3A /* Sources */,
+				59DFA6A81FF0F0D600418A3A /* Frameworks */,
+				59DFA6A91FF0F0D600418A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59DFA6AD1FF0F0D600418A3A /* PBXTargetDependency */,
+			);
+			name = "Countries - MVVMUITests";
+			productName = "Countries - MVVMUITests";
+			productReference = 59DFA6AB1FF0F0D600418A3A /* Countries - MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59DFA6841FF0F0D500418A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nathan Furman";
+				TargetAttributes = {
+					59DFA68B1FF0F0D500418A3A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					59DFA69F1FF0F0D500418A3A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59DFA68B1FF0F0D500418A3A;
+					};
+					59DFA6AA1FF0F0D600418A3A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59DFA68B1FF0F0D500418A3A;
+					};
+				};
+			};
+			buildConfigurationList = 59DFA6871FF0F0D500418A3A /* Build configuration list for PBXProject "Countries - MVVM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59DFA6831FF0F0D500418A3A;
+			productRefGroup = 59DFA68D1FF0F0D500418A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59DFA68B1FF0F0D500418A3A /* Countries - MVVM */,
+				59DFA69F1FF0F0D500418A3A /* Countries - MVVMTests */,
+				59DFA6AA1FF0F0D600418A3A /* Countries - MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59DFA68A1FF0F0D500418A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DFA69A1FF0F0D500418A3A /* LaunchScreen.storyboard in Resources */,
+				59DFA6C61FF0F56500418A3A /* FSCountriesTableViewController.xib in Resources */,
+				59DFA6971FF0F0D500418A3A /* Assets.xcassets in Resources */,
+				59DFA6D41FF11EBF00418A3A /* FScountryTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA69E1FF0F0D500418A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA6A91FF0F0D600418A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59DFA6881FF0F0D500418A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DFA6C91FF0F7BE00418A3A /* FSCountry.swift in Sources */,
+				59DFA6CC1FF0FC2A00418A3A /* FSTableViewDataSource.swift in Sources */,
+				59DFA6CF1FF0FF0800418A3A /* FSCountriesListViewModel.swift in Sources */,
+				59DFA6C11FF0F2DA00418A3A /* FSWebSource.swift in Sources */,
+				59DFA6D61FF1209F00418A3A /* FSConstants.swift in Sources */,
+				59DFA6BF1FF0F27600418A3A /* FSWebService.swift in Sources */,
+				59DFA6901FF0F0D500418A3A /* AppDelegate.swift in Sources */,
+				59DFA6C51FF0F56500418A3A /* FSCountriesTableViewController.swift in Sources */,
+				59DFA6D31FF11EBF00418A3A /* FScountryTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA69C1FF0F0D500418A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DFA6A51FF0F0D600418A3A /* Countries___MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DFA6A71FF0F0D600418A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DFA6B01FF0F0D600418A3A /* Countries___MVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59DFA6A21FF0F0D500418A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59DFA68B1FF0F0D500418A3A /* Countries - MVVM */;
+			targetProxy = 59DFA6A11FF0F0D500418A3A /* PBXContainerItemProxy */;
+		};
+		59DFA6AD1FF0F0D600418A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59DFA68B1FF0F0D500418A3A /* Countries - MVVM */;
+			targetProxy = 59DFA6AC1FF0F0D600418A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59DFA6981FF0F0D500418A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59DFA6991FF0F0D500418A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59DFA6B21FF0F0D600418A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59DFA6B31FF0F0D600418A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59DFA6B51FF0F0D600418A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YJ297JMP7;
+				INFOPLIST_FILE = "Countries - MVVM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59DFA6B61FF0F0D600418A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YJ297JMP7;
+				INFOPLIST_FILE = "Countries - MVVM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59DFA6B81FF0F0D600418A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Countries - MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries - MVVM.app/Countries - MVVM";
+			};
+			name = Debug;
+		};
+		59DFA6B91FF0F0D600418A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Countries - MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries - MVVM.app/Countries - MVVM";
+			};
+			name = Release;
+		};
+		59DFA6BB1FF0F0D600418A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Countries - MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Countries - MVVM";
+			};
+			name = Debug;
+		};
+		59DFA6BC1FF0F0D600418A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Countries - MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FS.Countries---MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Countries - MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59DFA6871FF0F0D500418A3A /* Build configuration list for PBXProject "Countries - MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DFA6B21FF0F0D600418A3A /* Debug */,
+				59DFA6B31FF0F0D600418A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59DFA6B41FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DFA6B51FF0F0D600418A3A /* Debug */,
+				59DFA6B61FF0F0D600418A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59DFA6B71FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DFA6B81FF0F0D600418A3A /* Debug */,
+				59DFA6B91FF0F0D600418A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59DFA6BA1FF0F0D600418A3A /* Build configuration list for PBXNativeTarget "Countries - MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DFA6BB1FF0F0D600418A3A /* Debug */,
+				59DFA6BC1FF0F0D600418A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59DFA6841FF0F0D500418A3A /* Project object */;
+}
